@@ -17,6 +17,12 @@ export default function Main(){
             setDadosGuardados(novosDados)
         }
 
+        function editarDado(index){
+            let novosDados = [...dadosGuardados]
+            novosDados[index] = window.prompt('Digite a nova tarefa')
+            setDadosGuardados(novosDados)
+        }
+
     return(
         <>
             <div className={styles.containerNativo}>
@@ -25,7 +31,7 @@ export default function Main(){
                 {dadosGuardados.map((item, index) =>
                     <div className={styles.containerElemento} key={index}>
                         <p>{item}</p>
-                        <button className={styles.btn}>Editar</button>
+                        <button className={styles.btn} onClick={(item) => editarDado(index)}>Editar</button>
                         <button className={styles.btn} onClick={(item) => excluirDado(index)}>Excluir</button>
                     </div>
                 )}
