@@ -21,7 +21,7 @@ export default function Main(){
             let novosDados = [...dadosGuardados]
             novosDados[index] = window.prompt('Digite a nova tarefa')
             setDadosGuardados(novosDados)
-        } 
+        }
 
     return(
         <>
