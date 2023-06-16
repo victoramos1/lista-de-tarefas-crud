@@ -30,12 +30,6 @@
 
 <p>4 - No termina da IDE, rode o comando "npm start" (sem aspas) e aguarde uma aba no seu navegador abrir com o projeto em execução.</p>
 
-<h2>Implementações futuras</h2>
-
-<ul>
-    <li>Uma nova tela de edição de anotações</li>
-</ul>
-
 <h2>Status do projeto</h2>
 
 <p>Versão 1.1.0 finalizada.</p>
