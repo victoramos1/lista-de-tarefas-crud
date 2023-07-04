@@ -4,12 +4,12 @@ import editar from '../img/editar.svg'
 import deletar from '../img/deletar.svg'
 
 export default function Main() {
-
   let dadoCapturado = useRef('')
   let dadoEditado = useRef('')
   const [dadosGuardados, setDadosGuardados] = useState([])
   const [modalAtivado, setModalAtivado] = useState(false)
   const [indiceParaEdicao, setIndiceParaEdicao] = useState("")
+  const [selecionados, setSelecionados] = useState([])
 
   function insereNovoDado() {
     if (dadoCapturado.current.value === '') {
@@ -45,6 +45,14 @@ export default function Main() {
     }
   }
 
+  function selecionado(index) {
+    setSelecionados(selecionados => {
+      const novosSelecionados = [...selecionados]
+      novosSelecionados[index] = !novosSelecionados[index]
+      return novosSelecionados
+    })
+  }
+
   return (
     <>
       {/* Modal */}
@@ -65,18 +73,22 @@ export default function Main() {
             <input id="input-dados" name="input-dados" placeholder="Digite aqui" ref={dadoCapturado}></input>
             <button onClick={insereNovoDado}>Adicionar</button>
           </div>
-          {dadosGuardados.map((item, index) =>
+          {dadosGuardados.map((item, index) => (
             <div className="itensArray" key={index}>
-              <p>{item}</p>
+              <p style={selecionados[index] ? { textDecoration: 'line-through' } : {}}>{item}</p>
               <div>
-                <a href="#!" onClick={() => ativaModal(index)}><img src={editar} alt="Desenho de um desenho e uma folha, em alusão ao ato de editar algo" /></a>
-                <a href="#!" onClick={() => excluiDado(index)}><img src={deletar} alt="Desenho de uma lixeira, em alusão ao ato de excluir algo" /></a>
+                <input type="checkbox" id={`checkbox-${index}`} checked={selecionados[index]} onChange={() => selecionado(index)} />
+                <a href="#!" onClick={() => ativaModal(index)}>
+                  <img src={editar} alt="Desenho de um desenho e uma folha, em alusão ao ato de editar algo" />
+                </a>
+                <a href="#!" onClick={() => excluiDado(index)}>
+                  <img src={deletar} alt="Desenho de uma lixeira, em alusão ao ato de excluir algo" />
+                </a>
               </div>
             </div>
-          )}
+          ))}
         </div>
       </div>
     </>
   )
 }
-
