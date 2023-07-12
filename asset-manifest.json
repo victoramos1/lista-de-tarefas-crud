@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lista-de-tarefas-crud/static/css/main.370d7ff6.css",
+    "main.js": "/lista-de-tarefas-crud/static/js/main.8a70dc2b.js",
+    "static/media/background.svg": "/lista-de-tarefas-crud/static/media/background.c78405581de054b54341.svg",
+    "static/media/editar.svg": "/lista-de-tarefas-crud/static/media/editar.eba13f47dfe29b03b3eeffbb9a97aadb.svg",
+    "index.html": "/lista-de-tarefas-crud/index.html",
+    "static/media/deletar.svg": "/lista-de-tarefas-crud/static/media/deletar.b365bd196f686736fd70c8a37dbbf00c.svg",
+    "main.370d7ff6.css.map": "/lista-de-tarefas-crud/static/css/main.370d7ff6.css.map",
+    "main.8a70dc2b.js.map": "/lista-de-tarefas-crud/static/js/main.8a70dc2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.370d7ff6.css",
+    "static/js/main.8a70dc2b.js"
+  ]
+}
