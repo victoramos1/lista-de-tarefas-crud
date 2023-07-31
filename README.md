@@ -23,15 +23,15 @@
 
 <p>Teste a aplicação online clicando em: https://victoramos1.github.io/lista-de-tarefas-crud/</p>
 
-<h2>Inicialização</h2>
+<h2>Testar localmente</h2>
 
 <p>1 - Instale o Node.js. Caso tenha instalado, pule essa etapa</p>
 
-<p>2 - No terminal do VS Code (ou na IDE que você estiver utilizando), utilize o comando "git clone https://github.com/victoramos1/lista-de-tarefas-crud" (sem aspas) caso tenha o Git instalado no computador, ou faça o download do arquivo .zip diretamente do GitHub.</p>
+<p>2 - No terminal do VS Code (ou na IDE que você estiver utilizando), utilize o comando <code>git clone https://github.com/victoramos1/lista-de-tarefas-crud</code> caso tenha o Git instalado no computador, ou faça o download do arquivo .zip diretamente do GitHub.</p>
 
-<p>3 - Com a pasta aberta na IDE (o caminho mostrado no terminal precisa levar ao projeto no seu computador, na altura do local onde se encontra o package.json), execute o comando "npm install" (sem aspas) no terminal da IDE.</p>
+<p>3 - Com a pasta aberta na IDE (o caminho mostrado no terminal precisa levar ao projeto no seu computador, na altura do local onde se encontra o package.json), execute o comando <code>npm install</code> no terminal da IDE.</p>
 
-<p>4 - No termina da IDE, rode o comando "npm start" (sem aspas) e aguarde uma aba no seu navegador abrir com o projeto em execução.</p>
+<p>4 - No termina da IDE, rode o comando <code>npm start</code> e aguarde uma aba no seu navegador abrir com o projeto em execução.</p>
 
 <h2>Status do projeto</h2>
 
